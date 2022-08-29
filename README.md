@@ -21,8 +21,14 @@
 
 **step4：** **运行指令：** ./a.out port；
 
-**step5：** **浏览器访问：** http://ip:port/index.html  其中ip为服务器端IP地址，port为端口号。
+**step5：** **浏览器访问：** http://ip:port/index.html  
 
-**运行结果：成功访问界面**
+其中ip为服务器端IP地址，port为端口号。
+
+**step6：** **压力测试指令：** ./webbench -c 1000 -t 5 http://ip:port/index.html  
+
+其中c表示客户端数，t表示时间，ip为服务器端IP地址，port为端口号。
+
+**运行结果：成功访问界面** 
 
 ![rep](resources/images/rep.png)
